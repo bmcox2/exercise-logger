@@ -1,0 +1,19 @@
+A large project scope idea is making an application that tracks my exercise and food and analyzes them. 
+To start small, I need to start with logging exercises.
+I am only proficient in coding in C++ so that is where we will start. 
+
+First I need to create the data abstraction. 
+
+/Workouts
+ - Date
+ - Name
+ - Length
+ - List of Exercises done
+	/Exercises
+	 - Exercise
+	 - Reps
+	 - Weight
+		/Exercise
+		 - Muscles hit
+		 
+

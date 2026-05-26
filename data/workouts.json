@@ -1,0 +1,48 @@
+{
+  "workouts": [
+    {
+      "date": "2026-22-26",
+      "exercises": [
+        {
+          "name": "Hack Squat",
+          "reps": 10,
+          "weight": 135.0
+        },
+        {
+          "name": "Hack Squat",
+          "reps": 8,
+          "weight": 185.0
+        },
+        {
+          "name": "Hack Squat",
+          "reps": 8,
+          "weight": 185.0
+        }
+      ],
+      "length": 60.0,
+      "name": "Legs"
+    },
+    {
+      "date": "2026-23-26",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "reps": 10,
+          "weight": 135.0
+        },
+        {
+          "name": "Bench Press",
+          "reps": 8,
+          "weight": 145.0
+        },
+        {
+          "name": "Bench Press",
+          "reps": 8,
+          "weight": 145.0
+        }
+      ],
+      "length": 60.0,
+      "name": "Push"
+    }
+  ]
+}
