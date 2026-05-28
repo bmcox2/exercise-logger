@@ -1,0 +1,32 @@
+V2 Phases
+
+Phase 1 - Exercise Database
+- Create an exercises.json file with a predefined list of exercises, each with name and muscle groups
+- Build a class to load and search that database
+- Replace free text exercise entry with search and select from the database
+
+Phase 2 - Edit and Delete Workouts
+- Delete a workout from the log
+- Edit a workout's name, date, or length
+- Add exercises to an existing workout
+
+Phase 3 - Single Workout View
+- Select and view one workout in detail from the menu
+- Display exercises with muscle groups
+
+Phase 4 - Statistics
+- Total volume per workout (weight x reps summed across all exercises)
+- Volume breakdown by muscle group per workout
+- View stats from the menu
+
+Phase 5 - Cleanup and Polish
+- Improved display formatting
+- Menu updates to support all new features
+- Update README
+
+V2 Complete When:
+- User can select exercises from a predefined database
+- Exercises have muscle groups attached
+- User can edit and delete workouts
+- User can view a single workout in detail
+- Basic statistics are available from the menu

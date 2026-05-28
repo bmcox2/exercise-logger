@@ -43,6 +43,28 @@
       ],
       "length": 60.0,
       "name": "Push"
+    },
+    {
+      "date": "5-27-26",
+      "exercises": [
+        {
+          "name": "Close-Grip Front Lat Pulldown",
+          "reps": 10,
+          "weight": 105.0
+        },
+        {
+          "name": "Close-Grip Front Lat Pulldown",
+          "reps": 8,
+          "weight": 115.0
+        },
+        {
+          "name": "Bent Over Barbell Row",
+          "reps": 10,
+          "weight": 120.0
+        }
+      ],
+      "length": 60.0,
+      "name": "Pull"
     }
   ]
 }
