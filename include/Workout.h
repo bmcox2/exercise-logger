@@ -22,4 +22,10 @@ class Workout {
 
         nlohmann::json toJson() const;
         static Workout fromJson(const nlohmann::json& j);
+
+        void setName(const std::string& name);
+        void setDate(const std::string& date);
+        void setLength(double length);
+        void deleteExercise(int index);
+        Exercise& getExercise(int index);
 };

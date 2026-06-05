@@ -1,3 +1,5 @@
+#include <iostream>
+#include <stdexcept>
 #include "Workout.h"
 
 Workout::Workout(const std::string& date, const std::string& name, double length) 
@@ -32,6 +34,10 @@ double Workout::getLength() const {
     return _length;
 }
 
+const std::vector<Exercise>& Workout::getExercises() const {
+    return _exercises;
+}
+
 nlohmann::json Workout::toJson() const {
     nlohmann::json j;
     j["date"] = _date;
@@ -58,4 +64,25 @@ Workout Workout::fromJson(const nlohmann::json& j) {
     }
 
     return workout;
+}
+
+void Workout::setName(const std::string& name) {
+    _name = name;
+}
+void Workout::setDate(const std::string& date) {
+    _date = date;
+}
+void Workout::setLength(double length) {
+    _length = length;
+}
+void Workout::deleteExercise(int index) {
+    if (index >= 0 && index < static_cast<int>(_exercises.size())) {
+        _exercises.erase(_exercises.begin() + index);
+    }
+}
+Exercise& Workout::getExercise(int index) {
+    if (index >= 0 && index < static_cast<int>(_exercises.size())) {
+        return _exercises[index];
+    }
+    throw std::out_of_range("Index out of bounds");
 }

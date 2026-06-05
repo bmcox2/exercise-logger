@@ -1,3 +1,6 @@
+#include <fstream>
+#include <iostream>
+#include <stdexcept>
 #include "WorkoutLog.h"
 
 void WorkoutLog::addWorkout(const Workout& workout) {
@@ -5,8 +8,8 @@ void WorkoutLog::addWorkout(const Workout& workout) {
 }
 
 void WorkoutLog::displayWorkouts() const {
-    for (const auto& workout : _workouts) {
-        workout.displayWorkout();
+    for (int i = 0; i < static_cast<int>(_workouts.size()); ++i) {
+        std::cout << i + 1 << ". " << _workouts[i].getName() << " - " << _workouts[i].getDate() << "\n";
     }
 }
 
@@ -35,10 +38,28 @@ void WorkoutLog::loadFromFile(const std::string& filename) {
     if (!inFile.is_open()) {
         return;
     }
+    if (inFile.peek() == std::ifstream::traits_type::eof()) {
+        return;
+    }
     nlohmann::json j;
     inFile >> j;
 
     for (const auto& workout : j.at("workouts")) {
         addWorkout(Workout::fromJson(workout));
     }
+}
+
+void WorkoutLog::deleteWorkout(int index) {
+    if (index < 0 || index >= static_cast<int>(_workouts.size())) {
+        std::cerr << "Invalid workout index\n";
+        return;
+    }
+    _workouts.erase(_workouts.begin() + index);
+}
+Workout& WorkoutLog::getWorkout(int index) {
+    if (index < 0 || index >= static_cast<int>(_workouts.size())) {
+        std::cerr << "Invalid workout index\n";
+        throw std::out_of_range("Index out of bounds");
+    }
+    return _workouts[index];
 }

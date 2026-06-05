@@ -13,4 +13,7 @@ class WorkoutLog {
 
         void saveToFile(const std::string& filename) const;
         void loadFromFile(const std::string& filename);
+
+        void deleteWorkout(int index);
+        Workout& getWorkout(int index);
 };

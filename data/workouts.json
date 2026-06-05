@@ -1,70 +1,86 @@
 {
   "workouts": [
     {
-      "date": "2026-22-26",
+      "date": "2026-05-27",
       "exercises": [
         {
           "name": "Hack Squat",
+          "primaryMuscles": [
+            "quadriceps"
+          ],
           "reps": 10,
+          "secondaryMuscles": [
+            "calves",
+            "glutes",
+            "hamstrings"
+          ],
           "weight": 135.0
         },
         {
           "name": "Hack Squat",
-          "reps": 8,
-          "weight": 185.0
-        },
-        {
-          "name": "Hack Squat",
-          "reps": 8,
-          "weight": 185.0
+          "primaryMuscles": [
+            "quadriceps"
+          ],
+          "reps": 10,
+          "secondaryMuscles": [
+            "calves",
+            "glutes",
+            "hamstrings"
+          ],
+          "weight": 175.0
         }
       ],
       "length": 60.0,
       "name": "Legs"
     },
     {
-      "date": "2026-23-26",
+      "date": "2026-05-28",
       "exercises": [
         {
-          "name": "Bench Press",
+          "name": "Barbell Bench Press - Medium Grip",
+          "primaryMuscles": [
+            "chest"
+          ],
           "reps": 10,
+          "secondaryMuscles": [
+            "shoulders",
+            "triceps"
+          ],
           "weight": 135.0
         },
         {
-          "name": "Bench Press",
+          "name": "Barbell Bench Press - Medium Grip",
+          "primaryMuscles": [
+            "chest"
+          ],
           "reps": 8,
+          "secondaryMuscles": [
+            "shoulders",
+            "triceps"
+          ],
           "weight": 145.0
         },
         {
-          "name": "Bench Press",
-          "reps": 8,
-          "weight": 145.0
+          "name": "Triceps Pushdown",
+          "primaryMuscles": [
+            "triceps"
+          ],
+          "reps": 10,
+          "secondaryMuscles": [],
+          "weight": 50.0
+        },
+        {
+          "name": "Triceps Pushdown",
+          "primaryMuscles": [
+            "triceps"
+          ],
+          "reps": 10,
+          "secondaryMuscles": [],
+          "weight": 50.0
         }
       ],
-      "length": 60.0,
+      "length": 10.0,
       "name": "Push"
-    },
-    {
-      "date": "5-27-26",
-      "exercises": [
-        {
-          "name": "Close-Grip Front Lat Pulldown",
-          "reps": 10,
-          "weight": 105.0
-        },
-        {
-          "name": "Close-Grip Front Lat Pulldown",
-          "reps": 8,
-          "weight": 115.0
-        },
-        {
-          "name": "Bent Over Barbell Row",
-          "reps": 10,
-          "weight": 120.0
-        }
-      ],
-      "length": 60.0,
-      "name": "Pull"
     }
   ]
 }

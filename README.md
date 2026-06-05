@@ -10,8 +10,10 @@ and weight, and persist your data across sessions using JSON.
 place it in a `nlohmann/` folder in the project root
 
 ## Build & Run
+```
 make logger
 ./logger
+```
 
 ## Project Structure
 exercise-logger/  
@@ -28,9 +30,12 @@ Makefile
 - View all logged workouts
 - Auto-save and load from JSON
 
-## V2 Planned
+## V2 Features
 
-- Edit existing workouts
-- Delete workouts
-- Add exercises to existing workouts
-- Improved display and filtering
+- Exercise database with search
+- Edit and delete workouts
+- Single workout view with statistics
+- Volume breakdown by muscle group
+
+## V3 Planned
+- UI (in planning)
